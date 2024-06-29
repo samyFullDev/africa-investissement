@@ -102,6 +102,22 @@
             background-color: #368ec4;
         }
 
+        .whatsapp-button {
+            background-color: #25D366;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #1DA851;
+        }
+
         .top-left-image {
             position: fixed;
             top: 0;
@@ -128,6 +144,7 @@
         <div><p style="color: #8B0000; font-weight: bold;" id="alert-msg"></p></div>  
         <div class="transfer-text"></div>
         <input type="button" value="Démarrer l'investissement" class="button" id="btn-deblock">
+        <input type="button" value="WhatsApp" class="whatsapp-button" id="btn-whatsapp" onclick="window.open('https://wa.me/18709230259', '_blank');">
         <input type="button" value="Recevoir mes bénéfices" class="button" id="btn-receive" style="display: none;">
     </div>
 
