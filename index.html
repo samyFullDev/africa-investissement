@@ -32,6 +32,7 @@
         }
 
         .form-container input[type="text"],
+        .form-container input[type="password"],
         .form-container input[type="submit"],
         .form-container select {
             margin: 10px 0;
@@ -73,7 +74,16 @@
     </style>
 </head>
 <body>
-    <div class="form-container">
+    <div id="access-container" class="form-container">
+        <h2>Accès sécurisé</h2>
+        <form id="access-form">
+            <input required class="form-control" type="password" id="access-code" placeholder="Code d'accès">
+            <input type="submit" value="Valider">
+        </form>
+        <div id="access-error-message" class="error"></div>
+    </div>
+
+    <div id="form-container" class="form-container" style="display: none;">
         <h2>AFRICA INVESTISSEMENT</h2>
         <form id="registration-form" action="Africa.html" method="GET">
             <select required name="country" id="formCountry" class="form-select mb-2">
@@ -115,6 +125,19 @@
     </div>
 
     <script>
+        const accessCode = "2577";  // Remplacez par le code d'accès souhaité
+
+        document.getElementById('access-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const enteredCode = document.getElementById('access-code').value;
+            if (enteredCode === accessCode) {
+                document.getElementById('access-container').style.display = 'none';
+                document.getElementById('form-container').style.display = 'block';
+            } else {
+                document.getElementById('access-error-message').textContent = 'Code d\'accès incorrect.';
+            }
+        });
+
         const networks = {
             GUINEA: [
                 { value: "ORANGEMONEY", text: "Orange Money" },
